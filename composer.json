@@ -1,0 +1,25 @@
+{
+  "name": "qingbing/debug-bootstrap",
+  "description": "调试入口",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "debug",
+    "bootstrap",
+    "demo"
+  ],
+  "homepage": "http://www.phpcorner.net",
+  "authors": [
+    {
+      "name": "qingbing",
+      "email": "780042175@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DebugBootstrap\\": "src",
+      "Test\\": "test/src"
+    }
+  }
+}
