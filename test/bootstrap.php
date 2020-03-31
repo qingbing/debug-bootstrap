@@ -6,15 +6,7 @@
  */
 require("../vendor/autoload.php");
 
-try {
-    if ($_GET['c'] || !empty($_GET['c'])) {
-        $className = $_GET['c'];
-        $class = "\Test\\{$className}";
-    } else {
-        $class = "\DebugBootstrap\TestHelper";
-    }
-    /* @var $class \DebugBootstrap\Abstracts\Tester */
-    $class::getInstance()->run();
-} catch (Exception $e) {
-    var_dump($e);
-}
+/**
+ * 运行web任务
+ */
+\DebugBootstrap\AppTester::getInstance()->runWeb();

@@ -32,6 +32,8 @@ abstract class Singleton
 
     /**
      * @describe    获取实例
+     *
+     * @return $this
      */
     public static function getInstance()
     {

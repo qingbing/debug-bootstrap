@@ -38,9 +38,6 @@ class TestCommand extends Singleton
      */
     protected function init()
     {
-        if (PHP_SAPI !== 'cli') {
-            throw new \Exception("该程序是cli模式，只能在命令行模式下用脚步执行");
-        }
         $this->_scriptFile = $_SERVER['SCRIPT_NAME'];
         for ($i = 1; $i < $_SERVER['argc']; $i++) {
             $arg = $_SERVER['argv'][$i];

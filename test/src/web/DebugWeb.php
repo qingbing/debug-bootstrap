@@ -5,7 +5,7 @@
  * @copyright   Chengdu Qb Technology Co., Ltd.
  */
 
-namespace Test;
+namespace Test\Web;
 
 
 use DebugBootstrap\Abstracts\Tester;

@@ -6,19 +6,9 @@
  */
 require("../vendor/autoload.php");
 
-
-$className = \DebugBootstrap\TestCommand::getInstance()->getParam('c', null);
-
-// php console.php --c=DebugCommand --id=5
-
-try {
-    if (null !== $className) {
-        $class = "\Test\\{$className}";
-    } else {
-        $class = "\DebugBootstrap\\TestHelper";
-    }
-    /* @var $class \DebugBootstrap\Abstracts\Tester */
-    $class::getInstance()->run();
-} catch (\Exception $e) {
-    var_dump($e);
-}
+/**
+ * 运行控制台任务
+ *
+ * eg : php console.php --c=DebugCommand --id=5
+ */
+\DebugBootstrap\AppTester::getInstance()->runConsole();

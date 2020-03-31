@@ -25,7 +25,12 @@ class TestHelper extends Tester
     public function run()
     {
         $urls = [];
-        $dir = realpath('.') . "/src";
+
+        if (Helper::isCli()) {
+            $dir = realpath('.') . "/src/command";
+        } else {
+            $dir = realpath('.') . "/src/web";
+        }
         // 将目录文件读取成链接数组
         $op = opendir($dir);
         while ($fp = readdir($op)) {
