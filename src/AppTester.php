@@ -25,8 +25,6 @@ class AppTester extends Singleton
 {
     /**
      * @describe    运行web任务
-     *
-     * @throws \Exception
      */
     public function runWeb()
     {

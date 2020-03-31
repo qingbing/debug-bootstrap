@@ -34,7 +34,6 @@ class TestCommand extends Singleton
 
     /**
      * 单例模式初始化函数，在构造函数后执行，子类可以覆盖
-     * @throws \Exception
      */
     protected function init()
     {
