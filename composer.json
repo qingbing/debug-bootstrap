@@ -19,7 +19,7 @@
   "autoload": {
     "psr-4": {
       "DebugBootstrap\\": "src",
-      "Test\\Commands\\": "test/src/command",
+      "Test\\Command\\": "test/src/command",
       "Test\\Web\\": "test/src/web"
     }
   }
