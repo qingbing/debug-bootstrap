@@ -30,10 +30,10 @@ class AppTester extends Singleton
     {
         try {
             if (Helper::isCli()) {
-                throw new \Exception("该程序是web模式，只能在客户端运行");
+                throw new \Exception("该程序是web模式，只能在客户端运行", 100100101);
             }
 
-            if ($_GET['c'] || !empty($_GET['c'])) {
+            if (isset($_GET['c']) || !empty($_GET['c'])) {
                 $className = $_GET['c'];
                 $class     = "\Test\Web\\{$className}";
             } else {
@@ -53,7 +53,7 @@ class AppTester extends Singleton
     {
         try {
             if (!Helper::isCli()) {
-                throw new \Exception("该程序是cli模式，只能在命令行模式下用脚步执行");
+                throw new \Exception("该程序是cli模式，只能在命令行模式下用脚步执行", 100100102);
             }
 
             $className = TestCommand::getInstance()->getParam('c', null);
