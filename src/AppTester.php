@@ -41,7 +41,8 @@ class AppTester extends Singleton
             }
             /* @var $class \DebugBootstrap\Abstracts\Tester */
             $class::getInstance()->run();
-        } catch (\Exception $e) {
+        }
+        catch (\Exception $e) {
             var_dump($e);
         }
     }
@@ -64,7 +65,8 @@ class AppTester extends Singleton
             }
             /* @var $class \DebugBootstrap\Abstracts\Tester */
             $class::getInstance()->run();
-        } catch (\Exception $e) {
+        }
+        catch (\Exception $e) {
             var_dump($e);
         }
     }
