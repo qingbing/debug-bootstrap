@@ -49,8 +49,8 @@ class TestCommand extends Singleton
             if (false === $pos) { // 没有分隔符
                 continue;
             }
-            $name = trim(substr($arg, 2, $pos - 2));
-            $value = trim(substr($arg, $pos + 1));
+            $name                 = trim(substr($arg, 2, $pos - 2));
+            $value                = trim(substr($arg, $pos + 1));
             $this->_params[$name] = $value;
         }
     }

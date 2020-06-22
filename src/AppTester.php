@@ -35,7 +35,7 @@ class AppTester extends Singleton
 
             if ($_GET['c'] || !empty($_GET['c'])) {
                 $className = $_GET['c'];
-                $class = "\Test\Web\\{$className}";
+                $class     = "\Test\Web\\{$className}";
             } else {
                 $class = "\DebugBootstrap\TestHelper";
             }
