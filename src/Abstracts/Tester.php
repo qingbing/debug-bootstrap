@@ -8,8 +8,7 @@
 namespace DebugBootstrap\Abstracts;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    单例模式（工厂）,测试抽象类
+ * 单例模式（工厂）,测试抽象类
  *
  * Class Tester
  * @package DBootstrap\Abstracts
@@ -17,7 +16,7 @@ namespace DebugBootstrap\Abstracts;
 abstract class Tester extends Singleton
 {
     /**
-     * @describe    执行函数
+     * 执行函数
      */
     abstract public function run();
 }

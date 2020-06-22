@@ -15,16 +15,13 @@ use DebugBootstrap\Abstracts\Singleton;
 defined("ZF_RUNTIME") or define("ZF_RUNTIME", dirname(realpath('.')) . '/runtime');
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    AppTester
- *
  * Class AppTester
  * @package DebugBootstrap
  */
 class AppTester extends Singleton
 {
     /**
-     * @describe    运行web任务
+     * 运行web任务
      */
     public function runWeb()
     {
@@ -48,7 +45,7 @@ class AppTester extends Singleton
     }
 
     /**
-     * @describe    运行控制台任务
+     * 运行控制台任务
      */
     public function runConsole()
     {

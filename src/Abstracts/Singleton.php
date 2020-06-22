@@ -8,8 +8,7 @@
 namespace DebugBootstrap\Abstracts;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    单例模式（工厂）
+ * 单例模式（工厂）
  *
  * Class Singleton
  * @package DebugBootstrap\Abstracts
@@ -17,21 +16,21 @@ namespace DebugBootstrap\Abstracts;
 abstract class Singleton
 {
     /**
-     * @describe    魔术方法：构造函数，禁用外部 new
+     * 魔术方法：构造函数，禁用外部 new
      */
     final private function __construct()
     {
     }
 
     /**
-     * @describe    存储实例
+     * 存储实例
      *
      * @var array
      */
     private static $_instances = [];
 
     /**
-     * @describe    获取实例
+     * 获取实例
      *
      * @return $this
      */
@@ -49,14 +48,14 @@ abstract class Singleton
     }
 
     /**
-     * @describe    构造函数后执行
+     * 构造函数后执行
      */
     protected function init()
     {
     }
 
     /**
-     * @describe    魔术方法：禁用实例 clone
+     * 魔术方法：禁用实例 clone
      */
     final private function __clone()
     {

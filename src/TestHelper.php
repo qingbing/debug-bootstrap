@@ -11,8 +11,7 @@ namespace DebugBootstrap;
 use DebugBootstrap\Abstracts\Tester;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    web测试连接组合
+ * web测试连接组合
  *
  * Class TestHelper
  * @package DebugBootstrap
@@ -20,7 +19,7 @@ use DebugBootstrap\Abstracts\Tester;
 class TestHelper extends Tester
 {
     /**
-     * @describe    执行函数
+     * 执行函数
      */
     public function run()
     {
@@ -60,7 +59,7 @@ class TestHelper extends Tester
     }
 
     /**
-     * @describe    获取测试访问链接
+     * 获取测试访问链接
      *
      * @return string
      */

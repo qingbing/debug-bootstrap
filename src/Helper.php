@@ -8,8 +8,7 @@
 namespace DebugBootstrap;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    帮助函数
+ * 帮助函数
  *
  * Class Helper
  * @package DebugBootstrap
@@ -17,7 +16,7 @@ namespace DebugBootstrap;
 class Helper
 {
     /**
-     * @describe    判断是否是在cli模式下运行
+     * 判断是否是在cli模式下运行
      *
      * @return bool
      */

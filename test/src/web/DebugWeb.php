@@ -11,16 +11,13 @@ namespace Test\Web;
 use DebugBootstrap\Abstracts\Tester;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    DebugWeb
- *
  * Class DebugWeb
  * @package Test
  */
 class DebugWeb extends Tester
 {
     /**
-     * @describe    执行函数
+     * 执行函数
      */
     public function run()
     {

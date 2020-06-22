@@ -11,16 +11,13 @@ use DebugBootstrap\Abstracts\Tester;
 use DebugBootstrap\TestCommand;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    DebugCommand
- *
  * Class DebugCommand
  * @package Test
  */
 class DebugCommand extends Tester
 {
     /**
-     * @describe    执行函数
+     * 执行函数
      */
     public function run()
     {

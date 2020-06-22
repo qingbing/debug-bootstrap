@@ -11,22 +11,19 @@ namespace DebugBootstrap;
 use DebugBootstrap\Abstracts\Singleton;
 
 /**
- * @author      qingbing<780042175@qq.com>
- * @describe    TestCommand
- *
  * Class TestCommand
  * @package DebugBootstrap
  */
 class TestCommand extends Singleton
 {
     /**
-     * @describe    脚步文件
+     * 脚步文件
      *
      * @var string
      */
     private $_scriptFile;
     /**
-     * @describe    传递参数
+     * 传递参数
      *
      * @var array
      */
@@ -56,7 +53,7 @@ class TestCommand extends Singleton
     }
 
     /**
-     * @describe    获取命令行的传递参数
+     * 获取命令行的传递参数
      *
      * @return array
      */
@@ -66,7 +63,7 @@ class TestCommand extends Singleton
     }
 
     /**
-     * @describe    获取命令行执行的某个参数
+     * 获取命令行执行的某个参数
      *
      * @param string|null $name
      * @param mixed $defaultVal
